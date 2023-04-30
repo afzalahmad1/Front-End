@@ -1,0 +1,29 @@
+html{
+    background-color: aquamarine;
+}
+
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    background-color:violet;
+}
+input{
+    padding: 5px;
+    margin: 10px;
+}
+#btn{
+    padding: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}

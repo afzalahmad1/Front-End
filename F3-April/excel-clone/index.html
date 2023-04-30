@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Excel-clone</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <div class="nav-item">File</div>
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Insert</div>
+        <div class="nav-item">Layout</div>
+        <div class="nav-item">Help</div>
+      </nav>
+    </header>
+    <section>
+      <div id="features">
+        <div >
+            <i class="fa-regular fa-copy" id="copy-btn"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-scissors" id="cut-btn"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-paste" id="paste-btn"></i>
+        </div>
+        <div>
+            <select id="font-family">
+                <option value="monospace">MonoSpace</option>
+                <option value="sans-serif">Sans-serif</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="cursive">Cursive</option>
+            </select>
+        </div>
+        <div >
+            <select id="font-size">
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+                <option value="22px">22</option>
+                <option value="24px">24</option>
+                <option value="26px">26</option>
+                <option value="28px">28</option>
+                <option value="30px">30</option>
+            </select>
+        </div>
+        <div>
+            <button id="bold-btn">B</button>
+        </div>
+        <div>
+            <button id="italics-btn">I</button>
+        </div>
+        <div>
+            <button id="underline-btn">U</button>
+        </div>
+        <div>
+            <button id="left-align">Left</button>
+        </div>
+        <div>
+            <button id="center-align">Center</button>
+        </div>
+        <div>
+            <button id="right-align">Right</button>
+        </div>
+        <div>
+            <label for="text-color">Text Color</label>
+            <input type="color" name="" id="text-color">
+        </div>
+        <div>
+            <label for="bg-color">BG Color</label>
+            <input type="color" name="" id="bg-color">
+        </div>
+        <div>
+            <i class="fa-solid fa-download" onclick="downloadJson()"></i>
+        </div>
+        <div>
+            <!--<i class="fa-solid fa-upload" id="jsonFile" accept=".json"><input type="file"></i>-->
+            <input type="file" id="jsonFile" accept=".json" />
+        </div>
+      </div>
+
+      <div class="container">
+            <div>
+                <h1 id="curr-cell">No Cell</h1>
+            </div>
+           <!-- <div>
+                <label for="fx">fx</label>
+                <input type="text" id="formula">
+            </div>-->
+      </div>
+
+      <table class="my-table">
+        <thead>
+            <tr id="table-heading-row">
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </section>
+    <footer id="new-Sheet">
+        <button id="add-sheet-btn" >Add Sheet</button>
+        <div>
+            <h1 id="curr-sheet">No Sheet</h1>
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3-C3</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="header">
+        <h3 class="item" >Header</h3>
+        <div class="right-header item">
+            <h3 onclick="signupPage()">Signup</h3>
+            <h3 onclick="profilePage()">Profile</h3>
+        </div>
+    </nav>
+
+        <form class="input-details" id="form" action="./profile.html">
+            <h1 style="padding-left: 10px;" >Signup</h1>
+            <div>
+                <input type="text" placeholder="Full Name" id="fullName">
+            </div>
+            <div>
+                <input type="email" placeholder="Email" id="email">
+            </div>
+            <div>
+                <input type="password" placeholder="Password" id="pass1">
+            </div>
+            <div>
+                <input type="password" placeholder="Confirm Password" id="pass2">
+            </div>
+            <p id="message" style="padding-left: 15px;"></p>
+            <button type="submit" id="btn"> SignUp</button>
+        </form>
+ 
+
+    <script src="./script.js"></script>
+</body>
+</html>

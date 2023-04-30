@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../contest-2"
+		},
+		{
+			"path": "../../vscode"
+		},
+		{
+			"path": "../../F2-March"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Html-Css"
+	}
+}

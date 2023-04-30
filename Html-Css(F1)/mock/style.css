@@ -1,0 +1,12 @@
+img{
+    width: 250px;
+    border: 2px solid black;
+    margin: 5px;
+}
+.item{
+    display: flex;
+    gap: 10px;
+}
+h2{
+    color: blue;
+}

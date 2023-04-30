@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label for="num1"></label>
+            <input type="number" placeholder="enter value1" required id="num1">
+        </div>
+        <div>
+            <label for="num2"></label>
+            <input type="number" placeholder="enter value2" required id="num2">
+        </div>
+        <div>
+            <select id="opr">
+                <option value="">--Select--</option>
+                <option value="+">Add</option>
+                <option value="-">Sub</option>
+                <option value="*">Mul</option>
+                <option value="/">divide</option>
+                <option value="%">Mod</option>
+            </select>
+        </div>
+        <div>
+            <button id="btn" onclick="calculate()">Calculate</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="./cal.js"></script>
+</body>
+</html>
