@@ -11,7 +11,7 @@ function generateToken(length) {
   return token;
 }
 
-var token = generateToken(16)
+var token = generateToken(16);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
